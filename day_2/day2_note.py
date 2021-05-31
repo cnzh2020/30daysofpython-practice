@@ -90,4 +90,33 @@ age = 10000000000
 print(type(first_name))
 print(type(True))
 
-# 
+# 数据格式硬转
+
+'''
+int() 强制转换为整数型
+float() 强制转换为浮点型
+str() 强制转换为字符型
+list() 强制转换为list型
+'''
+
+# int to float 整数转换为浮点型
+num_int = 10
+print('num_int:',num_int) # 10
+num_float = float(num_int)
+print('num_float:',num_float) # 10.0
+
+# float to int 浮点型转换为整数
+
+# int to str 整数转换为字符型
+
+# str to int 字符型转换为整数
+
+# str to list 字符型转换为有序列表
+
+# Numbers type 数字类型
+'''
+1. int_integer: 整数型 例: -3,-2,-1,0,1,2,3
+2. float_floating Point numbers : 浮点型 例: -3.5,-3.25,-1.0,0.0,0.1
+3. complex_numbers: 复杂数,带参数的式子 例:1+j,2+4j,1-1j
+'''
+
