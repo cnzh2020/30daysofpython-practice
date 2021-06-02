@@ -46,21 +46,40 @@ print('The circumference of the circle is:','%.2f' % circumference)
 # Calculate the slope, x-intercept and y-intercept of y = 2x -2 计算y=2x-2的斜率，x轴截距和y轴截距
 x = [0,1,2,3,4,5]
 y = [2*num-2 for num in x] # 数组的函数运算，表示y=2x-2的函数值在x=[0,1,2,3,4,5]中的值。
-slope = (y[2]-y[1])/(x[2]-x[1])
+slope_task8 = (y[2]-y[1])/(x[2]-x[1])
 x0 = 0
 y_intercept = 2*x0-2
 y0 = 0
 x_intercept = (y0+2)/2
-print({'slope':slope,'y-intercept':y_intercept,'x-intercept':x_intercept})
+print({'slope':slope_task8,'y-intercept':y_intercept,'x-intercept':x_intercept})
+
 
 # Slope is (m = y2-y1/x2-x1). Find the slope between point (2, 2) and point (6,10)
+x = [2,6]
+y = [6,10]
+slope_task9 = (y[1]-y[0])/(x[1]-x[0])
+print(slope_task9)
 
 # Compare the slopes in tasks 8 and 9.
+print(slope_task8 == slope_task9)
+print(slope_task8 != slope_task9)
+print(slope_task8 > slope_task9)
+print(slope_task8 < slope_task9)
+print(slope_task8 >= slope_task9)
+print(slope_task8 <= slope_task9)
 
 # Calculate the value of y (y = x^2 + 6x + 9). Try to use different x values and figure out at what x value y is 0.
+
+
 # Find the length of 'python' and 'jargon' and make a falsy comparison statement.
+len_py = len('python')
+len_ja = len('jargon')
+print(len_py == len_ja)
+print(len_py != len_ja)
+print(len_py > len_ja)
 
 # Use and operator to check if 'on' is found in both 'python' and 'jargon'
+
 
 # I hope this course is not full of jargon. Use in operator to check if jargon is in the sentence.
 
