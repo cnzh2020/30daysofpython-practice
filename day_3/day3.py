@@ -41,7 +41,6 @@ area = math.pi*radius**2
 circumference = 2*math.pi*radius
 print('The area of the circle is:','%.2f' % area)
 print('The circumference of the circle is:','%.2f' % circumference)
-'''
 
 # Calculate the slope, x-intercept and y-intercept of y = 2x -2 计算y=2x-2的斜率，x轴截距和y轴截距
 x = [0,1,2,3,4,5]
@@ -78,16 +77,31 @@ print(len_py == len_ja)
 print(len_py != len_ja)
 print(len_py > len_ja)
 
+
 # Use and operator to check if 'on' is found in both 'python' and 'jargon'
+
+print('on' in ('python' and 'jargon'))
 
 
 # I hope this course is not full of jargon. Use in operator to check if jargon is in the sentence.
+print('jargon' in 'I hope this course is not full of jargon.')
+
 
 # There is no 'on' in both dragon and python
+print('on' not in ('python' and 'jargon'))
+
 
 # Find the length of the text python and convert the value to float and convert it to string
+len_py = len('python')
+flo_py = float(len_py)
+str_py = str(flo_py)
+print(flo_py)
+print(str_py)
 
-# Even numbers are divisible by 2 and the remainder is zero. How do you check if a number is even or not using python?
+
+# Even numbers are divisible by 2 and the remainder is zero. How do you check if a number is even or not using python? 偶数可被2整除，余数为零。如何使用python检查一个数字是偶数还是非偶数？
+
+'''
 
 # The floor division of 7 by 3 is equal to the int converted value of 2.7.
 
