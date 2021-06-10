@@ -1,4 +1,6 @@
 # day3 exercise
+# 第72行和第150行的题目没做出来.
+
 '''
 # Declare your age as integer variable
 age = int(25)
@@ -66,10 +68,16 @@ print(slope_task8 > slope_task9)
 print(slope_task8 < slope_task9)
 print(slope_task8 >= slope_task9)
 print(slope_task8 <= slope_task9)
+'''
 
-# Calculate the value of y (y = x^2 + 6x + 9). Try to use different x values and figure out at what x value y is 0.
+'''
+# Calculate the value of y (y = x^2 + 6x + 9). Try to use different x values and figure out at what x value y is 0. 不会,等学到后面再回来搞
+x = [-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6,7,8,9,10]
+y = [x**2+6*x+9 for num in x]
+print(y)
+'''
 
-
+'''
 # Find the length of 'python' and 'jargon' and make a falsy comparison statement.
 len_py = len('python')
 len_ja = len('jargon')
@@ -100,20 +108,36 @@ print(str_py)
 
 
 # Even numbers are divisible by 2 and the remainder is zero. How do you check if a number is even or not using python? 偶数可被2整除，余数为零。如何使用python检查一个数字是偶数还是非偶数？
+int_a = int(input("Please enter a integer:"))
+modulus = int_a%2
+print(modulus == 0)
 
-'''
 
 # The floor division of 7 by 3 is equal to the int converted value of 2.7.
+floor_div = 7//3
+print( floor_div == int(2.7))
+
 
 # Check if type of '10' is equal to 10
+a = '10'
+b = 10
+print(a == b)
 
 # Check if int('9.8') is equal to 10
-
+a = int(float('9.8'))
+b = 10
+print(a == b)
+'''
 # Write a script that prompts the user to enter hours and rate per hour. Calculate pay of the person?
 '''
 Enter hours: 40
 Enter rate per hour: 28
 Your weekly earning is 1120
+'''
+'''
+emp_hours = input("Please enter the work hours:")
+emp_rate = input("Please enter the rate per hour:")
+print("Your weekly earing is",float(emp_hours)*float(emp_rate))
 '''
 
 # Write a script that prompts the user to enter number of years. Calculate the number of seconds a person can live. Assume someone lives up to hundred years.
@@ -121,8 +145,11 @@ Your weekly earning is 1120
 Enter number of years you have lived: 100
 You have lived for 3153600000 seconds.
 '''
+lived_years = input("Please input your age:")
+lived_seconds = 365*24*60*60*int(lived_years)
+print("You have lived for",lived_seconds,"seconds.")
 
-# Write a python script that displays the following table
+# Write a python script that displays the following table. 不会,等学到后面再回来搞.
 '''
 1 1 1 1 1
 2 1 2 4 8
